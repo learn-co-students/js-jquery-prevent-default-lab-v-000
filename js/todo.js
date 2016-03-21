@@ -1,6 +1,5 @@
 $(document).ready(function(){
-  // call functions here
-  addItem();
+  submitForm();
 });
 function submitForm(){
  $('form').on('submit', function(event){
