@@ -14,6 +14,15 @@ describe('To Do List', function() {
     expect(myKey[0]).toEqual("submit");
   });
 
+  it('binds a submit event to the form', function() {
+    submitForm();
+    var form = $('form')[0];
+    var formSubmitEvent = $._data(form, "events");
+    var myKey  = [];
+    for (var key in formSubmitEvent) { myKey.push(key)};
+    expect(myKey[0]).toEqual("submit");
+  })
+
   it('#adds input to the text field', function() {
     submitForm();
     $('#item').val("finish this lab");
@@ -25,7 +34,6 @@ describe('To Do List', function() {
     expect($("#list ol li:last")[0].innerHTML).toEqual("eat chips")
 
   });
-
 
 
 
