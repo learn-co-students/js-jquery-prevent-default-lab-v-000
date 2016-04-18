@@ -1,16 +1,14 @@
 $(document).ready(function(e){
   // call functions here
-      listItems();
+      submitForm();
 });
 
 // define functions here
 
-function listItems(){
+function submitForm(){
 $('form').on('submit', function(event){
-    value = $('#item').val();
-    $('ol').text(value);
-   
+    var listItem = $('#item').val();
+    $('ol').append('<li>' + listItem + '</li>');
+   event.preventDefault();
+  });
 }
-
-})
-   
