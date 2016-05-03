@@ -3,10 +3,11 @@ $(document).ready(function(){
 });
 
 function submitForm() {
-$('form').on("submit", function(event){
+$('form').on("submit", submiter );
+}
+function submiter(event){
   var formitem = $('#item').val();
   $('ol').append('<li>' + formitem + '</li>');
-  $('#item').val("")
+  $('#item').val()
   event.preventDefault();
-  });
 }
