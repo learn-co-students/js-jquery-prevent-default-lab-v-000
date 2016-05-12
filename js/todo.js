@@ -1,5 +1,13 @@
+
 $(document).ready(function(){
-  // call functions here
+submitForm()
 });
+
+function submitForm() {
+$('form').on('submit', function(event){
+  var data = $('#item').val();
+  $('ol').append( '<li>' + data + '</li>' );
+  event.preventDefault();
+})}
 
 // define functions here
