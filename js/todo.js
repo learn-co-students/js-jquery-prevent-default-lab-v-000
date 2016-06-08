@@ -3,3 +3,9 @@ $(document).ready(function(){
 });
 
 // define functions here
+function (){
+  $(':submit').on('click', function(event){
+    $('#list ol').append("<li>" +$('#item').val()+"</li>");
+    event.preventDefault();
+  });
+}
