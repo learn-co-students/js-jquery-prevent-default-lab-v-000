@@ -14,11 +14,12 @@ function submitForm() {
   });
 }
 
-// function handleFormSubmit(e) {
-//   //set item equal to the value of the element with #item
-//   var item = $('#item').val();
-//   //append to the <ol> a new <li> with the item value
-//   $("ol").append("<li>" + item + "</li>");
-//   //stop browser refresh
-//   e.preventDefault();
-// }
+// function adds() {
+//   $('form').on('submit', function(e) {
+//     var input = "<li>";
+//     input += $("#item").val();
+//     input += "</li>";
+//     $('div#list ol').append(input);
+//     e.preventDefault;
+//   });
+// };
