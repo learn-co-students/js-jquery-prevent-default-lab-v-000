@@ -1,5 +1,15 @@
 $(document).ready(function(){
-  // call functions here
+  submitForm();
 });
 
-// define functions here
+function submitForm() {
+  $('form').on('submit', function(event) {
+    var item = $('#item').val();
+    var list = $('#list ol')[0];
+    var newLI = document.createElement("li");
+    // debugger;
+    newLI.appendChild(document.createTextNode(item))
+    list.appendChild(newLI)
+    event.preventDefault();
+  });
+};
