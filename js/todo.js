@@ -11,5 +11,7 @@ function submitForm() {
     newLI.appendChild(document.createTextNode(item))
     list.appendChild(newLI)
     event.preventDefault();
+    // or more simply:
+    // $('ol').append( '<li>' + item + '</li>' );
   });
 };
