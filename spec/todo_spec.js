@@ -21,8 +21,7 @@ describe('To Do List', function() {
     $('#item').val("eat chips");
     $('form').submit();
     expect($("#list ol li")[0].innerHTML).toEqual("finish this lab");
-    // debugger;
-    expect($("#list ol li:last")[0].innerHTML).toEqual("eat chips")
+    expect($("#list ol li:last")[0].innerHTML).toEqual("eat chips");
 
   });
 
