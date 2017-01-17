@@ -1,4 +1,4 @@
-# A list of javascript files required for the project, in dependency order
+# A list of javascript files required for the project, in dependency order, whatever
 javascripts:
   files:
     - js/jquery-2.1.1.min.js
