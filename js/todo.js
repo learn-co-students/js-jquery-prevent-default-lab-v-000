@@ -4,13 +4,11 @@ $(document).ready(function(){
 });
 
 
-function submitForm() {
+function submitForm(){
   $('form').on('submit', function(event){
-    var item = $('#item').val();
-    $('ol').append('<li>' + item +'</li>');
+    var listItem = $('#item').val();
+    $('ol').append( '<li>' + listItem + '</li>' );
     event.preventDefault();
-
-    });
-  }
-});
+  });
+}
 // define functions here
