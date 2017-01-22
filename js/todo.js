@@ -5,13 +5,13 @@ $(document).ready(function(){
 
 // define functions here
 
-function submit(){
-  $('input').on('submit', addItem)
-}
 
 
 function addItem(){
-    var listItem = $('input#item').val();
-    $('#list ol').append(listItem)
+  $('form').on('submit', function(event){
+    var listItem = $('input').val();
+    $('#list ol').append('<li>' + listItem + '</li>')
     event.preventDefault();
-  }
+  })
+}
+
