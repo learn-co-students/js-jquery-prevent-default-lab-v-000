@@ -1,6 +1,8 @@
 $(document).ready(function(){
   // call functions here
-  $("form").on( "submit", submitForm);
+  $("form").on( "submit", function(event) {
+    submitForm(event);
+  });
 });
 
 // define functions here
