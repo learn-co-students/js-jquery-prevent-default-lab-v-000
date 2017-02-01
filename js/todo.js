@@ -1,15 +1,16 @@
 $(document).ready(function(){
   // call functions here
-  $("form").on( "submit", function(event) {
-    submitForm(event);
-  });
+   submitForm();
+
 });
 
 // define functions here
 
-  function submitForm(event) {
-    var item = ($("#item").val());
-    $("ol").append(`<li>${item}</li>`);
-    event.preventDefault();
+  function submitForm() {
+    $("form").on("submit", function(event) {
+      var item = ($("#item").val());
+      $("ol").append(`<li>${item}</li>`);
+      event.preventDefault();
+    });
   }
 
