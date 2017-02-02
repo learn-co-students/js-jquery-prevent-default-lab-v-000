@@ -7,7 +7,7 @@ $(document).ready(function() {
 function submitForm() {
   $('form').on('submit', function(event) {
     var newItem = $('#item').val();
-    $('ol').append(`<li>${newItem}</li>`);
+    $('ol').append("<li>" + newItem + "</li>");
     event.preventDefault();
   });
 }
