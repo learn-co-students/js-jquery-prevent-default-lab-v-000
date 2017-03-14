@@ -1,11 +1,9 @@
 $(document).ready(function(){
-  // call functions here
   submitForm();
 });
 
 function submitForm() {
   $('form').on('submit', function(e){
-
     e.preventDefault();
     var li = $('#item').val();
     $('#item').val("");
@@ -13,4 +11,3 @@ function submitForm() {
 
   })
 }
-// define functions here
