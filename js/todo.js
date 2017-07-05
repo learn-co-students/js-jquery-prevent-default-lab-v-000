@@ -9,7 +9,7 @@ $(document).ready(function(){
   function submitForm() {
     $("form").on("submit", function(event) {
       var item = ($("#item").val());
-      $("ol").append(`<li>${item}</li>`);
+      $("ol").append('<li>' + item + '</li>');
       event.preventDefault();
     });
   }
