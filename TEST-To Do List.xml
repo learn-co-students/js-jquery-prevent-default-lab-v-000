@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="2" errors="0" failures="0" time="0.011" timestamp="2016-11-01T13:34:23">
+		<testcase classname="To Do List" name="binds a submit event to the form" time="0.005">
+		</testcase>
+		<testcase classname="To Do List" name="#adds input to the text field" time="0.006">
+		</testcase>
+	</testsuite>
+</testsuites>
+
